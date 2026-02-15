@@ -11,8 +11,9 @@ story = ""
 words = []
 inputs = []
 
-if choice != "1" or "2" or "3":
+if choice not in ("1", "2", "3"):
     print("Wrong choice!\n")
+    quit()
 
 if choice == "1":
     inputs += [
@@ -117,5 +118,5 @@ else:
         f"you can visit, although the only way to get here now is {words[17]} on a {words[18]} {words[19]}!!"
     )
 
-print("/// Your Mad libs story ///"),
+print("/// Your Mad libs story ///")
 print(story)
