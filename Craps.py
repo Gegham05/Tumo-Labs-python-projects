@@ -9,9 +9,12 @@ def roll():
 
 s = roll()
 
-if s == 7 or s == 11:
+#You could write this in a more Pythonic way for readability
+#Its shorter and easier to read
+if s in (7, 11):
     print("You won!")
-elif s == 2 or s == 3 or s == 12:
+#Same here
+elif s in (2, 3, 12):
     print("Casino wins!")
 else:
     goal = s
